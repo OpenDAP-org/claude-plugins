@@ -14,7 +14,7 @@ Every OpenDAP repository enables the `opendap` plugin in its `.claude/settings.j
   - `/opendap:release` tags a revision and publishes a GitHub Release (manual only).
   - `/opendap:drc-rules` creates fab design rules with a test board.
   - `/opendap:export` generates a component's `export/` folder.
-  - `/opendap:security-check` runs the weekly DAP OS security check.
+  - `/opendap:security-check` runs the weekly OpenDAP OS security check.
   - A `SessionStart` hook reminds when the weekly security check is due.
   - A `PreToolUse` hook blocks `git commit --no-verify` and commits in clones without `pre-commit install`.
 
