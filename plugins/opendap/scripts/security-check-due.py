@@ -2,7 +2,7 @@
 """SessionStart hook: remind Claude when the weekly Blackbird OS security check is due.
 
 Looks for the OpenDAP workspace above the session directory (the folder holding repos.tsv)
-and its state file .state/security-check, written by toolkit-image bin/odap-security-check.
+and its state file .state/security-check, written by toolkit-image bin/odapkit-security-check.
 """
 import json, os, sys, time
 

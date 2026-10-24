@@ -7,7 +7,7 @@ description: Run the weekly Blackbird OS security check, comparing the last buil
 
 There is no CI, so this check runs by hand, at least weekly.
 
-1. From the OpenDAP workspace, run `public/toolkit/image/bin/odap-security-check`. It reads the last image manifest and records the run in `.state/security-check`.
-   - No manifest yet: build an image first with `public/toolkit/image/bin/odap-image build`.
+1. From the OpenDAP workspace, run `public/toolkit/image/bin/odapkit security-check`. It reads the last image manifest and records the run in `.state/security-check`.
+   - No manifest yet: build an image first with `public/toolkit/image/bin/odapkit image build`.
 2. Report the result to the user: up to date, or the list of packages with newer versions and the archive they come from (security, updates, backports).
-3. If there are security updates, offer to rebuild the image (`odap-image build`) and, when a release is affected, to prepare a new one with `/opendap:release`. Do not rebuild or release without the user's confirmation.
+3. If there are security updates, offer to rebuild the image (`odapkit image build`) and, when a release is affected, to prepare a new one with `/opendap:release`. Do not rebuild or release without the user's confirmation.
